@@ -1,0 +1,10 @@
+/Users/devonmartens/rust_education/Rust-Chat-GPT/web_server/target/debug/deps/actix_cors-484a0c289605021a.rmeta: /Users/devonmartens/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-cors-0.6.4/src/lib.rs /Users/devonmartens/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-cors-0.6.4/src/all_or_some.rs /Users/devonmartens/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-cors-0.6.4/src/builder.rs /Users/devonmartens/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-cors-0.6.4/src/error.rs /Users/devonmartens/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-cors-0.6.4/src/inner.rs /Users/devonmartens/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-cors-0.6.4/src/middleware.rs
+
+/Users/devonmartens/rust_education/Rust-Chat-GPT/web_server/target/debug/deps/actix_cors-484a0c289605021a.d: /Users/devonmartens/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-cors-0.6.4/src/lib.rs /Users/devonmartens/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-cors-0.6.4/src/all_or_some.rs /Users/devonmartens/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-cors-0.6.4/src/builder.rs /Users/devonmartens/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-cors-0.6.4/src/error.rs /Users/devonmartens/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-cors-0.6.4/src/inner.rs /Users/devonmartens/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-cors-0.6.4/src/middleware.rs
+
+/Users/devonmartens/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-cors-0.6.4/src/lib.rs:
+/Users/devonmartens/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-cors-0.6.4/src/all_or_some.rs:
+/Users/devonmartens/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-cors-0.6.4/src/builder.rs:
+/Users/devonmartens/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-cors-0.6.4/src/error.rs:
+/Users/devonmartens/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-cors-0.6.4/src/inner.rs:
+/Users/devonmartens/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-cors-0.6.4/src/middleware.rs:
