@@ -1,1 +1,1 @@
-mod command_line;
+pub mod command_line; // used to get user input

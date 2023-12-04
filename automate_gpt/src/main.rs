@@ -3,6 +3,9 @@ mod apis;
 mod models;
 mod helpers;
 
+use helpers::command_line::get_user_response;
+
 fn main() {
-    println!("Hello, world!");
+    let usr_req: String = get_user_response("What is your name?");
+    dbg!(usr_req);
 }
