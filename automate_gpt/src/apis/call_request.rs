@@ -35,3 +35,24 @@ pub async fn call_gpt(messages: Vec<Message>) {
 
     dbg!(res_raw.text().await.unwrap());
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[tokio::test]
+    async fn test_call_to_openai() {
+        let message = Message {
+            role: "user".to_string(),
+            content: "testing 1...2...3".to_string(),
+            receiver: "dev".to_string(),
+            timestamp: "String".to_string(),
+        };
+
+        let messages = vec![message];
+
+        // Assuming call_gpt function does not return anything.
+        // If it returns a Result, you should handle it here.
+        call_gpt(messages).await;
+    }
+}
