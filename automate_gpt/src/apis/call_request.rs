@@ -81,8 +81,11 @@ mod tests {
             }
         };
         let res: Result<String, Box<dyn::std::error::Error + Send>> = call_gpt(messages.clone()).await;
-        if let Ok(res) = res {
-            assert_eq!(res, "testing 1...2...3");
+        if let Ok(res_str) = &res {
+            dbg!(res_str);
+            assert_eq!(res_str, "testing 1...2...3");
+        } else {
+           assert!(false, "call_gpt returned an error");
         }
     }
 }
