@@ -72,7 +72,7 @@ mod tests {
 
         // Assuming call_gpt function does not return anything.
         // If it returns a Result, you should handle it here.
-        let res = match call_gpt(messages).await {
+        let res = match call_gpt(messages.clone()).await {
             Ok(response) => response,
             Err(e) => {
                 // Handle error, e.g., log it or return early
@@ -80,6 +80,9 @@ mod tests {
                 return;
             }
         };
-        
+        let res: Result<String, Box<dyn::std::error::Error + Send>> = call_gpt(messages.clone()).await;
+        if let Ok(res) = res {
+            assert_eq!(res, "testing 1...2...3");
+        }
     }
 }
