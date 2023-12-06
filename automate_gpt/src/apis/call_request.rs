@@ -1,16 +1,20 @@
 use crate::models::general::llm::{Message, ChatCompletion};
 use dotenv::dotenv;
-use reqwest::{Client, header, Request, RequestBuilder, Response};
+use reqwest::{Client, header::{self, InvalidHeaderValue}, Request, RequestBuilder, Response, Error};
 use std::env;
 
-pub async fn call_gpt(messages: Vec<Message>) {
+// Box for dynamic sized error
+// ownership of type implementing send can be called between threads
+pub async fn call_gpt(messages: Vec<Message>) -> Result<String, Boxd<dyn::std::error:Error + Send>> {
     dotenv().ok();
     let api_key = env::var("OPEN_AI_KEY").expect("OPEN_AI_KEY not found");
     let api_org = env::var("OPEN_AI_ORG").expect("OPEN_AI_ORG not found");
     let url = "https://api.openai.com/v1/engines/davinci/completions";
 
     let mut headers = header::HeaderMap::new();
-    headers.insert(header::AUTHORIZATION, header::HeaderValue::from_str(&format!("Bearer {}", api_key)).unwrap());
+    headers.insert(header::AUTHORIZATION, header::HeaderValue::from_str(&format!("Bearer {}", api_key))
+        .map_err(e: InvalidHeaderValue -> Box<)
+    );
     headers.insert("OpenAI-Organization", header::HeaderValue::from_str(&api_org.as_str()).unwrap());
 
     let client = Client::new();
